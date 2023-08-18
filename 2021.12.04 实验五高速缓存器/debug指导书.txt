@@ -1,0 +1,5 @@
+Cache修改：
+1、RAM的Data输出从高位到地位4-1
+2、MuxGroup要和MemRead||MemWrite与
+3、顶层模块数据的输出stop MemWrite输出0；从Ram读（Hit为0时）要做转发
+4、Group的小小hit要跟Group使能信号与
