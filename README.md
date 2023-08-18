@@ -1,2 +1,3 @@
 # Computer_Hardware_2021_Fall
-logisim文件
+请用logisim打开相应文件，可以看到图形界面电路模型。
+实验按照日期顺序排列
