@@ -1,0 +1,8 @@
+E:\2上机\大二上计组\2021.12.18实验七链接\选做实验一代码
+mingw32-make assembler
+assembler.exe input.txt intermediate.txt output.txt
+
+mingw32-make linker
+assembler.exe 2main.txt intermediate.txt linker1.txt
+assembler.exe 2add.txt intermediate.txt linker2.txt
+linker linker1.txt linker2.txt linkeroutput.txt

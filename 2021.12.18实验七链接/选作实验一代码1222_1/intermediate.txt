@@ -1,0 +1,23 @@
+.data
+8
+
+.text
+lw $s5 -4 $sp
+lw $s6 -8 $sp
+addu $t0 $s5 $s6
+addu $v0 $at $t0
+jr $ra
+lui $s1 100
+lui $at num@Hi
+ori $v1 $at num@Lo
+addiu $s1 $0 10
+addiu $s2 $0 20
+sw $ra 0 $a3
+sw $s1 -4 $a3
+sw $s2 -8 $a3
+addu $sp $at $a3
+jal add
+lw $ra 0 $sp
+addu $t0 $at $v0
+beq $t0 $0 end
+j end
